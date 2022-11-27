@@ -1,0 +1,18 @@
+<div class="wrapper">
+  <div class="body">
+    <img src="../../assets/img/autobus-escolar.png" alt="img logo" class="logo" />
+    <h1>login</h1>
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" placeholder="ingrese el usuario" >
+      <label >usuario</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" placeholder="ingrese la clave">
+      <label>Password</label>
+    </div>
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary btn-lg" type="button" (click)="iniciar()">iniciar session</button>
+    </div>
+    <p >no tienes cuenta? <a routerLink="/registro"> registrar</a></p>
+  </div>
+</div>

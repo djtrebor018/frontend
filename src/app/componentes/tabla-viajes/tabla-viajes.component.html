@@ -1,0 +1,31 @@
+<app-admin-navbar> </app-admin-navbar>
+<div class="wrapper">
+  <div class="body">
+<table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID del viaje</th>
+            <th scope="col">fecha de viaje</th>
+            <th scope="col">cantidad de asientos</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Ruta</th>
+            <th scope="col">Confirmaciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let vj of viajes">
+            <th scope="row" >{{ vj.idviajes}}</th>
+            <td>{{vj.fecha_viajes}}</td>
+            <td>{{vj.catidad_asientos}}</td>
+            <td>{{vj.nombre}}</td>
+            <td>{{vj.ruta}}</td>
+            <td>
+              <button type="button" class="btn btn-outline-danger"><i class="fa-sharp fa-solid fa-trash"></i></button>
+              <button type="button" class="btn btn-outline-success"><i class="fa-regular fa-circle-check"></i></button>
+
+            </td>
+          </tr>
+      </tbody>
+      </table>
+    </div>
+    </div>

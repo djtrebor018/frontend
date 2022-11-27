@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<div class="wrapper">
+  <div class="body">
+    <img src="../../assets/img/autobus-escolar.png" alt="img logo" class="logo" />
+    <h1>reserva</h1>
+    <div class="form-floating mb-3">
+      <select class="form-select">
+        <option selected> --fecha del viaje--</option>
+        <option [value]="fh.fecha_viajes" *ngFor="let fh of fecha_viajes" >
+          {{fh}}
+        </option>
+      </select>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="number" class="form-control" >
+      <label >cantidad de asientos</label>
+    </div>
+    <div class="form-floating mb-3">
+      <input type="text" class="form-control" >
+      <label >nombre</label>
+    </div>
+    <div class="form-floating mb-3">
+      <select class="form-select"  >
+        <option selected > --ruta--</option>
+        <option [value]="rt.ruta"  *ngFor="let rt of ruta" >
+             {{rt}}
+        </option>
+
+      </select>
+    </div>
+    <div class="d-grid gap-2">
+      <button class="btn btn-primary btn-lg" type="button" (click)="reservar()">reservar</button>
+</div>
+    </div>
+</div>
